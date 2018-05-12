@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Travel_Today" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NP-et-JCQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DM5-Va-1zl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel to live, Live to travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWX-GF-qih">
+                                            <rect key="frame" x="16" y="8" width="288" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMl-5M-34k">
+                                            <rect key="frame" x="16" y="32" width="288" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="yMl-5M-34k" firstAttribute="trailing" secondItem="WWX-GF-qih" secondAttribute="trailing" id="5Ec-CC-zxq"/>
+                                        <constraint firstItem="yMl-5M-34k" firstAttribute="top" secondItem="WWX-GF-qih" secondAttribute="bottom" constant="4" id="G6H-Yi-eoN"/>
+                                        <constraint firstItem="yMl-5M-34k" firstAttribute="leading" secondItem="WWX-GF-qih" secondAttribute="leading" id="Kzt-v9-YSH"/>
+                                        <constraint firstItem="WWX-GF-qih" firstAttribute="centerX" secondItem="DM5-Va-1zl" secondAttribute="centerX" id="Ldk-EK-4t8"/>
+                                        <constraint firstItem="WWX-GF-qih" firstAttribute="top" secondItem="DM5-Va-1zl" secondAttribute="top" constant="8" id="hbW-PY-Rft"/>
+                                        <constraint firstItem="WWX-GF-qih" firstAttribute="leading" secondItem="DM5-Va-1zl" secondAttribute="leading" constant="16" id="ufx-iE-TyR"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8NP-et-JCQ" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="6Ph-OY-hzl"/>
+                            <constraint firstItem="8NP-et-JCQ" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="dsU-Bt-Xlg"/>
+                            <constraint firstItem="8NP-et-JCQ" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="j2U-u3-8OH"/>
+                            <constraint firstAttribute="bottom" secondItem="8NP-et-JCQ" secondAttribute="bottom" id="mbK-iP-bIM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="destLabel" destination="yMl-5M-34k" id="aMp-of-94G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
